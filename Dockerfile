@@ -15,8 +15,12 @@ RUN npm ci --omit=dev
 COPY server.js ./
 COPY rekart_oms_design_2.html ./
 COPY src/ ./src/
+COPY public/ ./public/
 
-# Data dir is mounted as a Fly volume at runtime
+# Seed pricelist lives outside the persistent data volume.
+COPY seed/pricelist.json ./pricelist.json
+
+# Data dir is mounted as a persistent volume in production.
 RUN mkdir -p /app/data
 
 EXPOSE 8080

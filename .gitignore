@@ -1,5 +1,12 @@
 node_modules/
-data/
-.env
 *.db
-PRICELIST.xlsx
+.DS_Store
+
+# env (never commit secrets)
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# build output
+backend/data/
+frontend/.next/

@@ -1,0 +1,8 @@
+{
+  "watch": ["server.js", "src", ".env"],
+  "ext": "js,json",
+  "ignore": ["data/**", "tests/**", "node_modules/**", "seed/**"],
+  "delay": 1500,
+  "signal": "SIGTERM",
+  "verbose": false
+}

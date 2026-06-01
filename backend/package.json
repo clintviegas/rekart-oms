@@ -1,0 +1,39 @@
+{
+  "name": "rekart-oms-backend",
+  "version": "2.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js",
+    "seed:admin": "node scripts/create-admin.js"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.2.3",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.1.0"
+  },
+  "dependencies": {
+    "@sentry/node": "^9.46.0",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.5.0",
+    "google-auth-library": "^10.3.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.2",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^6.9.16",
+    "otplib": "^12.0.1",
+    "pdfkit": "^0.17.2",
+    "pino": "^9.9.0",
+    "pino-pretty": "^13.1.1",
+    "qrcode": "^1.5.4",
+    "stripe": "^18.5.0",
+    "zod": "^3.25.76"
+  }
+}

@@ -1,6 +1,0 @@
-node_modules/
-data/
-.env
-*.db
-PRICELIST.xlsx
-.git/
